@@ -22,6 +22,6 @@ function resultado() {
             document.getElementById("resultado").innerHTML = "Exceso de autoestima. Puede ser peligrosa, ya que puede denotar problemas para analizar la realidad o el caso de niños demasiado confiados y complacientes consigo mismos";
         }
     } else {
-        document.getElementById("resultado").innerHTML = "El test no está terminado. Regresa y contesta todas las preguntas";
+        alert("Tienes que responder todas las preguntas primero");
     }
 }
