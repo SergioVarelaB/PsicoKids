@@ -13,7 +13,7 @@ function resultado() {
         document.getElementById("resultado").innerHTML = "Autoestima muy baja. La persona cree poco en sus posibilidades y que necesita estímulos para confiar más en sí mismo.";
     } else if (resultado > 15 && resultado <= 25) {
         document.getElementById("resultado").innerHTML = "Autoestima saludable. Cierto que se puede mejorar, pero cree en él mismo y en sus posibilidades. Sabe que puede mejorar pero que no está por debajo de nadie. ";
-    } else if (resultado == 26) {
+    } else if (resultado >= 27) {
         document.getElementById("resultado").innerHTML = "Autoestima muy fuerte.";
     } else {
         document.getElementById("resultado").innerHTML = "Exceso de autoestima. Puede ser peligrosa, ya que puede denotar problemas para analizar la realidad o el caso de niños demasiado confiados y complacientes consigo mismos";
