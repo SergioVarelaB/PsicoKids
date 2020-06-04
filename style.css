@@ -18,3 +18,45 @@
     width: 1170px;
     text-align: -webkit-center;
 }
+
+.center {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.font_5 {
+    font: normal normal normal 18px/1.4em lulo-clean-w01-one-bold, sans-serif;
+    color: #0F3A61;
+    text-align: center;
+}
+
+.button {
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: transparent;
+    color: seashell;
+}
+
+.description {
+    margin-bottom: 18px;
+    font-size: 1.8ex;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.purpple {
+    background-color: purple;
+}
