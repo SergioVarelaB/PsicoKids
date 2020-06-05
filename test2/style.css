@@ -136,3 +136,9 @@ div#drag td {
 .mark {
     background-color: #e0e0e0;
 }
+
+.fondoPirulino {
+    background-image: url('background.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
