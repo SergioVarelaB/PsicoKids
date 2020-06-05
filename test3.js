@@ -11,6 +11,8 @@ function respuesta2(a) {
 
 function resultado() {
     if (res1 != 0 && res2 != 0) {
+        Document.getElementById("resultadoMensaje").innerHTML = "Te identificas con el número " + res1 + ":";
+        Document.getElementById("resultado2Mensaje").innerHTML = "Te gustaría identificarte con el número " + res2 + ":";
         switch (res1) {
             case 1:
                 document.getElementById("resultado").innerHTML = "Propio de niños atrevidos, ilusionados, que no tienen miedo a los retos ni a los obstáculos. Valientes y seguros de sí mismos. Con buena autoestima y ganas de conseguir logros. Suelen ser personas que se esfuerzan y tienen el valor de la perseverancia como un valor clave en su vida para conseguir el éxito. ";

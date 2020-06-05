@@ -49,16 +49,253 @@
             var color = '';
             for (i = 0; i < 8; i++) {
                 var pos = document.getElementById(i);
-                if (pos.firstChild) color = pos.firstChild.id;
-                colores[i] = color;
+                if (pos.firstChild) {
+                    color = pos.firstChild.id;
+                    colores[i] = color;
+                }
             }
         }
 
         function resultado() {
+            var res = '';
+            var cont = 0;
             respuestas();
             colores.forEach(element => {
-                console.log(element);
+                cont++
             });
+            if (cont == 8) {
+                for (i = 0; i < 8; i++) {
+                    switch (i) {
+                        case 0:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 1 o 2: Significa que tenemos grandes deseos de neutralidad</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 1 o 2: Refleja vanidad</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde: este color está relacionado con la autoafirmación, cuanto más alto esté este color, mejor adaptados estaremos en nuestro entorno</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 1 o 2: reflejo de deseos de actividad</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 1 o 2: es señal de deseos de agresividad y enfrentamiento</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en las primeras posiciones: refleja deseos de equilibrio y armonía.</p>';
+                                    break;
+                            }
+                            break;
+                        case 1:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 1 o 2: Significa que tenemos grandes deseos de neutralidad</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 1 o 2: Refleja vanidad</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde: este color está relacionado con la autoafirmación, cuanto más alto esté este color, mejor adaptados estaremos en nuestro entorno</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 1 o 2: reflejo de deseos de actividad</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 1 o 2: es señal de deseos de agresividad y enfrentamiento</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en las primeras posiciones: refleja deseos de equilibrio y armonía.</p>';
+                                    break;
+                            }
+                            break;
+                        case 2:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 3 o 4: Puede ser un reflejo de neutralidad alcanzada</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 3 o 4: Refleja sensibilidad</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde: este color está relacionado con la autoafirmación, cuanto más alto esté este color, mejor adaptados estaremos en nuestro entorno</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 3 o 4: significa que nuestra actividad es efectiva. Es decir, estamos haciendo todo lo que desearíamos hacer</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 3 o 4: es probable que estemos ejerciendo dicha agresividad en este momento de nuestra vida</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en tercer o cuarto puesto: significa que los deseos de equilibrio han sido alcanzados.</p>';
+                                    break;
+                            }
+                            break;
+                        case 3:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 3 o 4: Puede ser un reflejo de neutralidad alcanzada</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 3 o 4: Refleja sensibilidad</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde: este color está relacionado con la autoafirmación, cuanto más alto esté este color, mejor adaptados estaremos en nuestro entorno</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 3 o 4: significa que nuestra actividad es efectiva. Es decir, estamos haciendo todo lo que desearíamos hacer</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 3 o 4: es probable que estemos ejerciendo dicha agresividad en este momento de nuestra vida</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en tercer o cuarto puesto: significa que los deseos de equilibrio han sido alcanzados.</p>';
+                                    break;
+                            }
+                            break;
+                        case 4:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 5 o 6: Puede significar que reprimimos la neutralidad</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 5 o 6: Señal de buenas capacidades empáticas</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde: este color está relacionado con la autoafirmación, cuanto más alto esté este color, mejor adaptados estaremos en nuestro entorno</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 5 o 6: es posible que nuestra actividad esté frenada.</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 5 o 6: Agresión reprimida</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en puestos bajos: reflejo de la imposibilidad de alcanzar la armonía e incluso puede significar que reprimimos el deseo de alcanzarla</p>';
+                                    break;
+                            }
+                            break;
+                        case 5:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 5 o 6: Puede significar que reprimimos la neutralidad</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 5 o 6: Señal de buenas capacidades empáticas</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde: este color está relacionado con la autoafirmación, cuanto más alto esté este color, mejor adaptados estaremos en nuestro entorno</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 5 o 6: es posible que nuestra actividad esté frenada.</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 5 o 6: Agresión reprimida</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en puestos bajos: reflejo de la imposibilidad de alcanzar la armonía e incluso puede significar que reprimimos el deseo de alcanzarla</p>';
+                                    break;
+                            }
+                            break;
+                        case 6:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 5 o 6: Puede significar que rechazamos la neutralidad</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 7 u 8: Escasa empatía</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde en 7 u 8 posición: es posible que tengamos problemas relacionados con la dependencia hacia otras personas</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 7 u 8: probablemente estemos rechanzando nuestros deseos de actividad.</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 7 u 8: Rechazo de la agresión</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en puestos bajos: reflejo de la imposibilidad de alcanzar la armonía e incluso puede significar que reprimimos el deseo de alcanzarla</p>';
+                                    break;
+                            }
+                            break;
+                        case 7:
+                            switch (colores[i]) {
+                                case 'gris':
+                                    res += '<p>Gris en número 5 o 6: Puede significar que rechazamos la neutralidad</p>';
+                                    break;
+                                case 'morado':
+                                    res += '<p>Morado en número 7 u 8: Escasa empatía</p>';
+                                    break;
+                                case 'verde':
+                                    res += '<p>Verde en 7 u 8 posición: es posible que tengamos problemas relacionados con la dependencia hacia otras personas</p>';
+                                    break;
+                                case 'rojo':
+                                    res += '<p>Rojo en número 7 u 8: probablemente estemos rechanzando nuestros deseos de actividad.</p>';
+                                    break;
+                                case 'marron':
+                                    res += '<p>Marrón: está relacionado con los deseos de satisfacer nuestras necesidades corporales, cuanto más abajo esté en nuestras preferencias más represión e incluso rechazo tendremos hacia nuestras propias necesidades biológicas</p>';
+                                    break;
+                                case 'negro':
+                                    res += '<p>Negro en número 7 u 8: Rechazo de la agresión</p>';
+                                    break;
+                                case 'amarillo':
+                                    res += '<p>Amarillo: Este es el color del optimismo, cuánto más alto esté en nuestras preferencias, afrontaremos los problemas de un modo más alegre y orientado a la eficacia</p>';
+                                    break;
+                                case 'azul':
+                                    res += '<p>Azul en puestos bajos: reflejo de la imposibilidad de alcanzar la armonía e incluso puede significar que reprimimos el deseo de alcanzarla</p>';
+                                    break;
+                            }
+                            break
+                    }
+                }
+                document.getElementById("resultado").innerHTML = res;
+            } else {
+                alert("Tienes que ordenar todos los colores");
+            }
         }
     </script>
     <style>
@@ -198,8 +435,6 @@
         <button class="button2" onclick="resultado()">Resultados del test</button>
         <button class="button2" onclick="location.href='../test3.html'"> Siguiente test</button>
         <p id="resultado">
-        </p>
-        <p id="resultado2">
         </p>
     </div>
 </body>
