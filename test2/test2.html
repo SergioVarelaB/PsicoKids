@@ -46,9 +46,10 @@
         var colores = Array(8);
 
         function respuestas() {
+            var color = '';
             for (i = 0; i < 8; i++) {
                 var pos = document.getElementById(i);
-                if (pos.firstChild) var color = pos.firstChild.id;
+                if (pos.firstChild) color = pos.firstChild.id;
                 colores[pos] = color;
             }
         }
