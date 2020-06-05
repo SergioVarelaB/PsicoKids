@@ -60,3 +60,9 @@
 .purpple {
     background-color: purple;
 }
+
+.fondoPirulino {
+    background-image: url('test2/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
