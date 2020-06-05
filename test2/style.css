@@ -142,3 +142,16 @@ div#drag td {
     background-attachment: fixed;
     background-size: cover;
 }
+
+.button2:hover {
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2 {
+    background-color: #008CBA;
+    border-radius: 12px;
+    color: white;
+}

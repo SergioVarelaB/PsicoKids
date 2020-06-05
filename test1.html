@@ -16,6 +16,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+
+    <style>
+        .button2:hover {
+            background-color: white;
+            border-radius: 12px;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+        
+        .button2 {
+            background-color: #008CBA;
+            border-radius: 12px;
+            color: white;
+        }
+    </style>
 </head>
 
 <body class="fondoPirulino">
@@ -143,8 +159,8 @@
                 </div>
             </div>
             <div style="margin-left: 40%;">
-                <button onclick="resultado()">Resultados del test</button>
-                <button><a href="test2/test2.html">Continuar con el siguiente</a></button>
+                <button class="button2" onclick="resultado()">Resultados del test</button>
+                <button class="button2" onclick="location.href='test2/test2.html'"> Siguiente test</button>
             </div>
 
         </div>
