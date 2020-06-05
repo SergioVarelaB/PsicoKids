@@ -42,6 +42,22 @@
                 rd.drop_option = 'single';
             }
         }
+
+        var colores = Array(8);
+
+        function respuestas() {
+            for (i = 0; i < 8; i++) {
+                var pos = document.getElementById(i);
+                if (pos.firstChild) var color = pos.firstChild.id;
+                colores[pos] = color;
+            }
+        }
+
+        function resultado() {
+            colores.forEach(element => {
+                console.log(element);
+            });
+        }
     </script>
     <style>
         .body {
@@ -91,28 +107,28 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td></td>
+                            <td id="0"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="1"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="2"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="3"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="4"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="5"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="6"></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td id="7"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -129,43 +145,42 @@
                         <!-- clone 2 elements + last element -->
                         <tr>
                             <td class="mark">
-                                <div id="c" class="drag gris"></div>
+                                <div id="gris" class="drag gris"></div>
                             </td>
                         </tr>
                         <tr>
                             <td class="mark">
-                                <div id="b" class="drag morado"></div>
+                                <div id="morado" class="drag morado"></div>
                             </td>
                         </tr>
                         <tr>
                             <td class="mark">
-                                <div id="a" class="drag verde"></div>
+                                <div id="verde" class="drag verde"></div>
                             </td>
                         </tr>
                         <tr>
                             <td class="mark">
-                                <div id="d" class="drag rojo"></div>
+                                <div id="rojo" class="drag rojo"></div>
                             </td>
                         </tr>
                         <tr>
                             <td class="mark">
-                                <div id="c" class="drag marron"></div>
+                                <div id="marron" class="drag marron"></div>
                             </td>
                         </tr>
                         <tr>
                             <td class="mark">
-                                <div id="c" class="drag negro"></div>
+                                <div id="negro" class="drag negro"></div>
                             </td>
                         </tr>
                         <tr>
                             <td class="mark">
-                                <div id="c" class="drag amarillo"></div>
+                                <div id="amarillo" class="drag amarillo"></div>
                             </td>
                         </tr>
                         <tr class="">
-                            <td class="mark" style="">
-
-                                <div id="c" class="drag azul" style="cursor: move; z-index: 10; position: static; left: 0px; top: 0px;"></div>
+                            <td class="mark">
+                                <div id="azul" class="drag azul" style="cursor: move; z-index: 10; position: static; left: 0px; top: 0px;"></div>
                             </td>
                         </tr>
                     </tbody>
